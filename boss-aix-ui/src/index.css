@@ -1,0 +1,24 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FULL SCREEN SPACE BACKGROUND */
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: radial-gradient(circle at center, #0d0126 0%, #000000 90%);
+  background-size: 400% 400%;
+  animation: galaxyFlow 20s infinite alternate ease-in-out;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* SPACE MOTION */
+@keyframes galaxyFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 50% 0%; }
+}
